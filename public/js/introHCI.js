@@ -40,10 +40,6 @@ function callBackFn(result) {
 					  '<p><small>' + result['date'] + '</small></p>' +
 					  '<p>' + result['summary'] + '</p></a>';
 					  
-	var projectID = $(this).closest('.project').attr('id');
-
-	console.log(projectHTML);
-
-	$('#' + projectID + " .details").html(projectHTML);
+	$('#project' + result.id + " .details").html(projectHTML);
 
 }
